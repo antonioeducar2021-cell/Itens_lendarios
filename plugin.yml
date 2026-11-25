@@ -1,0 +1,15 @@
+name: ItensLendarios
+version: '${version}'
+main: br.com.itenslendarios.ItensLendarios
+api-version: '26.3'
+author: Admin
+description: Tridente Z, Corno X e Pena W.
+commands:
+  itenslendarios:
+    description: Comandos administrativos dos itens lendários.
+    usage: /itenslendarios <tridente|corno|pena> [jogador]
+    permission: itenslendarios.admin
+permissions:
+  itenslendarios.admin:
+    description: Permite entregar os itens lendários.
+    default: op
