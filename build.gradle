@@ -1,3 +1,4 @@
+
 plugins {
     id 'java'
 }
@@ -7,12 +8,12 @@ version = '1.0.0'
 
 repositories {
     mavenCentral()
-    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven {
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
 }
 
 dependencies {
-    // Se a versão exata do Paper 26.3 tiver outro identificador no repositório,
-    // ajuste paperVersion em gradle.properties.
     compileOnly "io.papermc.paper:paper-api:${paperVersion}"
 }
 
@@ -32,3 +33,4 @@ processResources {
         expand(version: project.version)
     }
 }
+
