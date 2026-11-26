@@ -19,7 +19,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-        -name: Debug e Build
+      - name: Debug e Build
         run: |
           echo "=== DIRETORIO ATUAL ==="
           pwd
@@ -34,3 +34,4 @@ jobs:
         with:
           name: ItensLendarios-JAR
           path: build/libs/*.jar
+
