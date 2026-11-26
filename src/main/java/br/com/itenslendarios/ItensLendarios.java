@@ -83,7 +83,7 @@ public final class ItensLendarios extends JavaPlugin implements Listener {
 
         // Atualiza a Pena W continuamente para detectar as duas mãos.
         Bukkit.getScheduler().runTaskTimer(this, this::atualizarPenas, 1L, 5L);
-        getLogger().info("ItensLendarios ativado.");
+        getLogger().info("ITENS LENDARIOS - VERSAO DE TESTE 3 CARREGADA!");
     }
 
     @Override
