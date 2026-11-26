@@ -19,8 +19,16 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-      - name: Build
-        run: gradle build
+      - name: Debug e Build
+        run: |
+          echo "=== DIRETORIO ATUAL ==="
+          pwd
+          echo "=== ARQUIVOS JAVA ==="
+          find . -type f -name "*.java"
+          echo "=== ARQUIVOS DO PROJETO ==="
+          find src -type f
+          echo "=== COMPILACAO ==="
+          gradle clean build --info
 
       - uses: actions/upload-artifact@v4
         with:
